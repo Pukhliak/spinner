@@ -1,0 +1,15 @@
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+@mixin button($bgColor, $textColor) {
+  max-width: 100%;
+  height: toRem(35);
+  background-color: $bgColor;
+  color: $textColor;
+  border-radius: toRem(20);
+  padding: 0 toRem(28);
+  border: none;
+  cursor: pointer;
+}

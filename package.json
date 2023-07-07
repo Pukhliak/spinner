@@ -1,0 +1,29 @@
+{
+  "name": "spinner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/styles.scss css/styles.css",
+    "scss:watch": "node-sass -w scss/styles.scss css/styles.css",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "imagemin": "imagemin /images/* --out-dir=optimized/images",
+    "build": "npm run scss && npm run autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pukhliak/spinner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pukhliak/spinner/issues"
+  },
+  "homepage": "https://github.com/Pukhliak/spinner#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "imagemin-cli": "^7.0.0",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^10.1.0"
+  }
+}
