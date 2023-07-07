@@ -1,0 +1,20 @@
+nav {
+  ul {
+    display: flex;
+    gap: toRem(40);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-family: $fontContentBold;
+      font-size: toRem(18);
+
+      a {
+        &:hover {
+          color: rgb(140, 25, 140);
+        }
+      }
+    }
+  }
+}

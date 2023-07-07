@@ -1,2 +1,39 @@
 .header {
+  display: flex;
+  align-items: center;
+  gap: toRem(62);
+  //justify-content: space-evenly;
+  min-height: 10vh;
+
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+  }
+
+  span {
+    font-family: $fontSpecial;
+    font-size: toRem(24);
+    color: rgb(140, 25, 140);
+  }
+  &__wrapper {
+    background: $colorBlack;
+  }
+
+  img {
+    max-width: 100%;
+    width: 32px;
+    height: auto;
+    border-radius: 25%;
+  }
+
+  &__social {
+    display: flex;
+    gap: toRem(8);
+
+    a {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 }

@@ -7,3 +7,19 @@ p {
   font-family: $fontContent;
   margin: 0;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: $fontSpecial;
+  color: $colorWhite;
+  font-size: toRem(32);
+  text-align: center;
+  margin: 0 auto;
+}

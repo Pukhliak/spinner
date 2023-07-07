@@ -5,7 +5,7 @@
   padding: toRem(15) 0;
   color: $colorWhite;
   button {
-    @include button($colorYellow, $colorBlack);
+    @include button($colorMediumSpringGreen, $colorBlack);
   }
 
   &__wrapper {
